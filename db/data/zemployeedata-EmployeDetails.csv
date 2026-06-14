@@ -1,0 +1,11 @@
+ID,EmpName,Designation,Dob,EmpSalary,Emplocation,reportsTo,department_ID
+E001,Arjun Sharma,Software Engineer,1995-04-12,75000.00,Mumbai,E005,D001
+E002,Priya Mehta,HR Manager,1988-09-23,90000.00,Delhi,E010,D002
+E003,Rahul Verma,Financial Analyst,1992-07-15,80000.00,Bangalore,E010,D003
+E004,Sneha Nair,Marketing Executive,1997-01-30,65000.00,Chennai,E008,D004
+E005,Vikram Iyer,Tech Lead,1985-11-05,120000.00,Mumbai,E010,D001
+E006,Divya Pillai,Software Engineer,1996-03-18,72000.00,Hyderabad,E005,D001
+E007,Amit Joshi,Recruiter,1993-06-22,60000.00,Pune,E002,D002
+E008,Kavya Reddy,Marketing Manager,1987-08-14,110000.00,Chennai,E010,D004
+E009,Suresh Kumar,Accountant,1990-12-01,70000.00,Delhi,E003,D003
+E010,Neha Gupta,CEO,1980-02-28,250000.00,Mumbai,,

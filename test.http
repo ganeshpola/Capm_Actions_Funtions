@@ -1,0 +1,65 @@
+GET http://localhost:4004/odata/v4/my/Department
+
+### single record
+
+GET http://localhost:4004/odata/v4/my/Department('D001')
+
+### Create Header record
+
+POST http://localhost:4004/odata/v4/my/Department
+Content-Type: application/json
+
+{
+    "ID": "D006",
+    "DepartmentName": "Legal",
+    "DeptDescription": "Handles all legal and compliance matters"
+}
+
+### create a new Item record
+POST http://localhost:4004/odata/v4/my/EmployeDetails
+Content-Type: application/json
+
+{
+    "ID": "E011",
+    "EmpName": "Rohan Desai",
+    "Designation": "Legal Advisor",
+    "Dob": "1991-05-17",
+    "EmpSalary": "",
+    "Emplocation": "Mumbai",
+    "reportsTo": "E010",
+    "department_ID": "D006"
+}
+
+### create Header and Item record together
+POST http://localhost:4004/odata/v4/my/Department
+Content-Type: application/json
+
+{
+    "ID": "D101",
+    "DepartmentName": "SAP",
+    "DeptDescription": "SAP",
+    "Empdetails": [
+        {
+            "ID": "80",
+            "EmpName": "Raju",
+            "Designation": "SAP Consultant",
+            "Dob": "1985-03-25",
+            "EmpSalary": 75000.00,
+            "Emplocation": "New York",
+            "reportsTo": "Ganesh"
+        },
+        {
+            "ID": "81",
+            "EmpName": "Ramu",
+            "Designation": "SAP Specialist",
+            "Dob": "1990-07-12",
+            "EmpSalary": 60000.00,
+            "Emplocation": "New York",
+            "reportsTo": "Ganesh"
+        }
+    ]
+}
+
+### unbound Function
+
+GET http://localhost:4004/odata/v4/my/getEmployeesalary()
